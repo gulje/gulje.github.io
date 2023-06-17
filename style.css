@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+}
+
+@font-face {
+    font-family: "Hardpixel";
+    src: url('./Hardpixel.OTF')
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #23050e;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0 0;
+    }
+    90% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    color: #23050e;
+    background-image: url("./img/6728670.png");
+    background-repeat: repeat-x;
+    animation: bg 200s infinite;
+    background-position: 100%;
+    background-attachment: fixed;
+    font-family: "Hardpixel";
+}
+
+#main {
+    width: 720px;
+    margin: 18px auto auto auto;
+}
+
+header {
+    height: 90px;
+    margin-bottom: 88px;
+}
+
+#title {
+    text-decoration: none;
+    color: rgb(253, 158, 230);
+    float: left;
+    margin-bottom: 32px;
+}
+
+#gulce {
+    text-decoration: none;
+    font-size: 4.25rem;
+    text-transform: uppercase;
+    color: rgb(253, 158, 230);
+}
+
+#gulce:hover {
+    color: rgb(255, 180, 236);
+}
+
+#description {
+    color: rgb(255, 180, 236);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+#separate {
+    color: rgb(253, 158, 230);
+}
+
+.box {
+    padding: 0 16px 16px 16px;
+    border-radius: 50px;
+    border: 15px solid transparent;
+    border-image: url("./img/box.png") 15 round;
+    background-color: rgb(255, 180, 236);
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    border: 18px solid transparent;
+    border-image: url("./img/heading.png") 18 round;
+    border-radius: 25px;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+p {
+    margin-top: 25px;
+    font-size: 19px;
+    line-height: 1.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.griditem {
+    width: 120px;
+    height: 120px;
+    border: 15px solid transparent;
+    border-image: url("./img/post.png") 21 round;
+    border-radius: 12px;
+    background-color: rgb(255, 180, 236);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.griditem:hover {
+    background-color: rgb(244, 139, 218);
+}
+
+.griditem img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.griditem p {
+    margin: 0;
+    line-height: 20px;
+    font-size: 1.1rem;
+}
+
+.reverse {
+    background: #000;
+}
+
+.tones-of-pink {
+    background: rgb(229,106,179);
+    background: linear-gradient(90deg, rgba(229,106,179,1) 0%, rgba(239,135,190,1) 25%, rgba(249,163,203,1) 50%, rgba(252,188,215,1) 75%, rgba(255,206,230,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
